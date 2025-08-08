@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{font-family: ui-sans-serif, system-ui; padding: 24px}
+a{color:#111}
+.card{border:1px solid #eee;border-radius:12px;padding:16px}
+.btn{display:inline-flex;gap:8px;align-items:center;border-radius:12px;padding:10px 14px;background:#111;color:#fff}
+.btn.ghost{background:#f5f5f5;color:#111}
