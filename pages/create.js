@@ -4,10 +4,9 @@ export default function Create() {
   const [niche, setNiche] = useState("Finance");
   const [audience, setAudience] = useState("Gen Z in the US");
   const [product, setProduct] = useState("an AI personal finance app");
-  const [hook, setHook] = useState<string | null>(null);
+  const [hook, setHook] = useState(null);
 
-  const generate = async () => {
-    // Mock generator for now – I’ll wire real AI next drop
+  const generate = () => {
     const hooks = [
       "I thought I was saving… until I saw this",
       "$312 disappeared last week? Here’s where",
@@ -44,10 +43,8 @@ export default function Create() {
         <h2 style={{fontSize:18,marginBottom:8}}>Preview (1080×1920)</h2>
         <div style={{position:"relative",width:"100%",aspectRatio:"9/16",borderRadius:16,overflow:"hidden",background:"linear-gradient(135deg,#f5f5f5,#e9e9e9)"}}>
           <div style={{position:"absolute",inset:0,display:"grid",placeItems:"center",opacity:.4}}>Candid iPhone image</div>
-          {/* Safe zones (rough): top bar & bottom bar */}
           <div style={{position:"absolute",left:0,top:0,right:0,height:200,background:"rgba(255,59,48,.12)"}}/>
           <div style={{position:"absolute",left:0,bottom:0,right:0,height:300,background:"rgba(255,59,48,.12)"}}/>
-          {/* Hook bubble */}
           {hook && (
             <div style={{position:"absolute",left:16,top:220,maxWidth:"70%",background:"rgba(0,0,0,.7)",color:"#fff",padding:"10px 12px",borderRadius:12}}>
               {hook}
