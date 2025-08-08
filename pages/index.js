@@ -12,7 +12,7 @@ export default function Home() {
         Create viral content in minutes with AI-powered scripts, trending hooks,
         and ready-to-post social posts.
       </p>
-      <a href="#get-started" style={{
+      <a href="/onboarding" style={{
         background:'#3b82f6', padding:'0.75rem 1.5rem', borderRadius:'0.5rem',
         fontWeight:'bold', color:'#fff', textDecoration:'none'
       }}>
